@@ -23,18 +23,6 @@ def sito(n):
                 j+=i
     return lista_pierwsze
 
-'''while i*i <=max_wartosc:
-    if lista_pierwsze[i]==0:
-        for j in range(i*i,(len(lista_int)+1),i):
-            lista_pierwsze[j-1]=1
-    i+=1
-print(lista_pierwsze)'''
-
-
-''''wynik=0
-for _ in range(len(lista_pierwsze)):
-    if lista_pierwsze[_]==0:
-        wynik+=1'''
 cos=sito(10000)
 wynik=0
 for i in lista_int:
