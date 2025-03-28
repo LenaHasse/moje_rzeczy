@@ -15,7 +15,7 @@ with open('liczby_przyklad.txt','r') as plik:
     def czy_pierwsza(x):
         if x < 2:
             return False
-        for i in range(2, x + 1):
+        for i in range(2, x):
             if x % i == 0:
                 return False
         return True
