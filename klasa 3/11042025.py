@@ -1,4 +1,4 @@
-with open('entry_arr.txt','r') as plik:
+with open('entry_arr.txt', 'r') as plik:
     liczby=plik.read()
     lista_liczb=[int(i) for i in liczby.split()]
     lista_liczb.sort()
