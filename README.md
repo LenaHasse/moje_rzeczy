@@ -1,1 +1,1 @@
-bla bla bla
+lenusia udaje ze cos potrafi
