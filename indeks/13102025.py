@@ -43,3 +43,5 @@ for i in lista:
     suma_wszystkich+=suma_cyfr(i)
 print(wieksze_od_30_int)
 print(suma_wszystkich)
+
+#1223
