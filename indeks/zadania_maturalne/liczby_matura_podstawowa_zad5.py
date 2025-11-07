@@ -1,5 +1,5 @@
 #zad1
-with open('liczby.txt','r') as plik:
+with open('liczby.txt', 'r') as plik:
     lista=[int(x) for x in plik]
 
     najwieksza=0
