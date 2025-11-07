@@ -1,9 +1,9 @@
-with open('pary.txt','r') as plik:
+with open('pary.txt', 'r') as plik:
     lista_list=[list(x.strip().split()) for x in plik]
     lista_liczb=[int(i[0]) for i in lista_list]
     lista_slow=[i[1] for i in lista_list]
 
-    wyniki=open('wyniki4.txt','w')
+    wyniki=open('../wyniki4.txt', 'w')
     #zad1
     wyniki.write('4.1\n')
     def czy_pierwsza(n):
@@ -72,6 +72,6 @@ with open('pary.txt','r') as plik:
             najmniejsza=lista_zad3[i]
 
     wyniki.write('4.3\n')
-    wyniki.write(f'{najmniejsza[0]} ')
+    wyniki.write(f'{najmniejsza[0]} \n')
     wyniki.write(f'{najmniejsza[1]}\n')
 
