@@ -1,7 +1,7 @@
-with open('trojki.txt','r')as plik:
+with open('trojki.txt', 'r')as plik:
     lista=[list(map(int, x.split())) for x in plik]
     print(lista)
-    wyniki=open('wyniki4','w')
+    wyniki=open('../wyniki4', 'w')
 
     #4.1
     suma=0

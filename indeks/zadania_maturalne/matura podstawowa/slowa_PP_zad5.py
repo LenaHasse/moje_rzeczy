@@ -18,7 +18,7 @@ with open('slowa.txt', 'r') as plik:
     #5.2
     wyniki.write('5.2\n')
 
-    with open('nowe.txt','r') as plik1:
+    with open('../nowe.txt', 'r') as plik1:
         lista_nowe=[i.strip() for i in plik1]
 
         for i in lista_nowe:
