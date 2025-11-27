@@ -11,3 +11,9 @@ def fib_memoizacja(n,pamiec={}):
         return pamiec[n]
     if n<=1:
         return n
+
+    wynik=fib_memoizacja(n-1,pamiec)+fib_memoizacja(n-2,pamiec)
+    pamiec[n]=wynik
+    return wynik
+
+print(fib_memoizacja(5))
