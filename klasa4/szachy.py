@@ -1,4 +1,3 @@
-from dataclasses import replace
 
 with open('szachy_przyklad.txt','r') as plik:
     tekst=plik.readlines()
@@ -68,49 +67,59 @@ with open('szachy_przyklad.txt','r') as plik:
 
 
     #zad3
-    #sprawdzanie wierszy
-    def szachowanie_wiersze(plansze):
-        for plansza in range(len(plansze)):
+    def ile_szachow(krol_symbol,wieza_symbol):
+        ile_szachow=0
+        for plansza in plansze:
+            czy_szachuje=False
+            for wiersz in range(0,8):
+                for kolumna in range(0,8):
+                    if plansza[wiersz][kolumna]==krol_symbol:
+                        wiersz_w_gore=wiersz-1
+                        wiersz_w_dol=wiersz+1
+                        kolumna_w_prawo=kolumna+1
+                        kolumna_w_lewo=kolumna-1
+
+                        while wiersz_w_gore>=0:
+                            if plansza[wiersz_w_gore][kolumna]==wieza_symbol:
+                                czy_szachuje=True
+                                break
+                            elif plansza[wiersz_w_gore][kolumna]!='.':
+                                break
+                            wiersz_w_gore-=1
+
+                        while wiersz_w_dol<=7:
+                            if plansza[wiersz_w_dol][kolumna]==wieza_symbol:
+                                czy_szachuje=True
+                                break
+                            elif plansza[wiersz_w_dol][kolumna]!='.':
+                                break
+                            wiersz_w_dol+=1
+
+                        while kolumna_w_prawo<=7:
+                            if plansza[wiersz][kolumna_w_prawo]==wieza_symbol:
+                                czy_szachuje=True
+                                break
+                            elif plansza[wiersz][kolumna_w_prawo]!='.':
+                                break
+                            kolumna_w_prawo+=1
+
+                        while kolumna_w_lewo>=7:
+                            if plansza[wiersz][kolumna_w_lewo]==wieza_symbol:
+                                czy_szachuje=True
+                                break
+                            elif plansza[wiersz][kolumna_w_lewo]!='.':
+                                break
+                            kolumna_w_lewo+=1
+            if czy_szachuje:
+                ile_szachow+=1
+        return ile_szachow
 
 
-            for wiersz in range(8):
-                pojedynczy_wiersz=plansze[plansza][wiersz].replace('.','')
-                pojedynczy_wiersz=list(set(pojedynczy_wiersz))
 
-                for i in range(len(pojedynczy_wiersz)):
-                    if pojedynczy_wiersz[i]=='W':
-                        if i>0 and pojedynczy_wiersz[i-1]=='k':
-                            return True
-                        if i<(len(pojedynczy_wiersz)-1) and pojedynczy_wiersz[i+1]=='k':
-                            return True
+    print()
+    print(ile_szachow('K',"w"))
+    print(ile_szachow('k','W'))
 
-                    if pojedynczy_wiersz[i]=='w':
-                        if i>0 and pojedynczy_wiersz[i-1]=='K':
-                            return True
-                        if i<(len(pojedynczy_wiersz)-1) and pojedynczy_wiersz[i+1]=='K':
-                            return True
-
-                    if pojedynczy_wiersz[i]=='k':
-                        if i>0 and pojedynczy_wiersz[i-1]=='W':
-                            return True
-                        if i<(len(pojedynczy_wiersz)-1) and pojedynczy_wiersz[i+1]=='W':
-                            return True
-
-                    if pojedynczy_wiersz[i]=='K':
-                        if i>0 and pojedynczy_wiersz[i-1]=='W':
-                            return True
-                        if i<(len(pojedynczy_wiersz)-1) and pojedynczy_wiersz[i+1]=='W':
-                            return True
-
-
-    szachowanie_wiersze(plansze)
-    #sprawdzanie kolumn
-    for plansza in range(len(plansze)):
-
-        for wiersz in range(8):
-            for indeks in range(8):
-                pojedyncza_kolumna = plansze[plansza][wiersz].replace('.', '')
-                pojedyncza_kolumna = list(set(pojedyncza_kolumna))
 
 
 
