@@ -22,7 +22,6 @@ def dekompresuj_RLE(skompresowany):
 
     while i<len(skompresowany):
         licznik=''
-        liczby=[x for x in skompresowany if x.isdigit()]
         while i<len(skompresowany) and skompresowany[i].isdigit():
             licznik+=skompresowany[i]
             i+=1
