@@ -1,0 +1,11 @@
+Identyfikator;Nazwisko;Imie;id instancji
+1;Abacki;Jan;1
+2;Babacka;Violetta;1
+3;Cabacki;Ryszard;1
+4;Dabacki;Konstanty;1
+5;Dabacki;Franciszek;1
+6;Dabacka;Imogena;1
+7;Ebacki;Adam;2
+8;Fabacka;Matylda;2
+9;Gabacki;Antoni;2
+10;Habacki;Inocenty;2
