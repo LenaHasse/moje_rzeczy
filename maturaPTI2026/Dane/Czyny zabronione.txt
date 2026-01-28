@@ -1,0 +1,9 @@
+IDENT; Czyn zabroniony; kara minimalna-lat; kara maksymalna-lat
+1; Dzielenie przez zero; 15; 25
+2; Wyrównywanie tekstu spacjami; 5; 10
+3; Koñczenie twardo ka¿dego wiersza tekstu; 15; 25
+4; Tworzenie wybitnej redundancji w bazie danych; 3; 5
+5; Gmatwanie struktury tekstu zamiast u¿ycia tabeli; 1; 3
+6; U¿ycie w arkuszu kalkulacyjnym adresów wzglêdnych zamiast bezwzglêdnych lub odwrotnie; 10; 15
+7; Nieznajomoœæ systemu binarnego; 1; 11
+8; Nieznajomoœæ istoty systemu pozycyjnego; 1; 12
