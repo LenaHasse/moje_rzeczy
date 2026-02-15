@@ -1,5 +1,5 @@
 #zad1
-with open('mecz.txt','r') as plik:
+with open('mecz.txt', 'r') as plik:
     tekst=plik.read().strip()
     suma=0
     for i in range(1,len(tekst)):

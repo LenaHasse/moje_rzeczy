@@ -1,4 +1,4 @@
-with open('odbiorcy.txt','r')as plik:
+with open('odbiorcy.txt', 'r')as plik:
     odbiorcy=[int(x) for x in plik]
     #zad2
     zad1=0
@@ -35,7 +35,7 @@ with open('odbiorcy.txt','r')as plik:
     #zad4
     pakiety=[i+1 for i in range(len(odbiorcy))]
     slownik={}
-    with open('wyniki4.txt','w')as wyniki:
+    with open('wyniki4.txt', 'w')as wyniki:
         wyniki.write('4.2\n')
         wyniki.write(str(zad1))
         wyniki.write('\n4.3\n')
