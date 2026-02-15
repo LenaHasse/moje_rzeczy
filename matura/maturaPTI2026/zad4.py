@@ -1,4 +1,4 @@
-with open('tekst_przyklad.txt','r')as plik:
+with open('tekst_przyklad.txt', 'r')as plik:
     lista=[]
     for linia in plik:
         for slowo in linia.strip().split():

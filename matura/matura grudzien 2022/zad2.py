@@ -1,4 +1,4 @@
-with open('pary.txt','r') as plik:
+with open('pary.txt', 'r') as plik:
     pary=[list(map(int,x.split())) for x in plik if x.strip()]
     wynik=[]
     wyniki=open('wyniki2.txt','w')
