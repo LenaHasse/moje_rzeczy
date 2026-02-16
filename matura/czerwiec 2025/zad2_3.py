@@ -1,4 +1,4 @@
-with open('liczby2_przyklad.txt','r')as plik2:
+with open('liczby2.txt','r')as plik2:
     liczby2=[int(x)for x in plik2]
 
 def ciecia_zad3(k):
@@ -10,12 +10,10 @@ def ciecia_zad3(k):
         temp //= 10
         d += 1
 
-    for i in range(d-1):
-        if kwadrat==0:
-            break
-        b = kwadrat % 10 ** i
-        kwadrat //= 10 ** i
-        a = kwadrat
+    for i in range(1,d):
+        potega=10**i
+        a=kwadrat//potega
+        b =kwadrat%potega
         if (a+b)<=k:
             stopien+=1
 
@@ -31,4 +29,3 @@ for i in liczby2:
 
 print(max3)
 print(liczb3)
-print(ciecia_zad3(7746))
