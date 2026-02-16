@@ -26,13 +26,26 @@ with open('dane_przyklad.txt','r')as plik:
                 cyfry[j]=1
             else:
                 cyfry[j]+=1
-    print(cyfry)
-    cyfra2=0
+    cyfra2=''
     wystapienia2=0
-    for wystapienie, cyfra in cyfry.values():
+    for cyfra, wystapienie in cyfry.items():
         if wystapienia2<wystapienie:
             wystapienia2=wystapienie
             cyfra2=cyfra
-    print(wystapienia2)
-    print(cyfra)
 
+    print(cyfra2)
+    print(wystapienia2)
+#zad3
+zad3=[]
+for i in lista_liczb:
+    if len(i)==9 and i[0]=='5':
+        zad3.append(i)
+
+print(zad3)
+
+#zad4
+nr_telefonow=[x for x in lista_liczb if len(x)==9]
+print(nr_telefonow)
+for i in nr_telefonow:
+    slownik={}
+    for j in i:
