@@ -20,7 +20,7 @@ def symuluj(zadania, strategia_s1, strategia_s2):
     return max(czas_s1,czas_s2)
 
 wszystkie_zadania=[]
-with open('zadania_przyklad.txt','r') as plik:
+with open('zadania_przyklad.txt', 'r') as plik:
     for linia in plik:
         dane=[int(x) for x in linia.strip().split()]
         wszystkie_zadania.append(dane[1:])

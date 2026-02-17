@@ -1,4 +1,4 @@
-with open('slowa.txt','r')as plik:
+with open('slowa.txt', 'r')as plik:
     lista=[x.strip()for x in plik]
 
     #zad1
@@ -38,7 +38,7 @@ with open('slowa.txt','r')as plik:
             zad3.append(slowo)
 
     print(zad3)
-with open('wyniki3.txt','w')as wyniki:
+with open('wyniki3.txt', 'w')as wyniki:
     wyniki.write("3.1\n")
     wyniki.write(str(zad1))
     wyniki.write('\n')

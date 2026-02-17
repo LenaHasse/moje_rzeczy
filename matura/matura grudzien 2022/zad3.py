@@ -1,4 +1,4 @@
-with open('liczby.txt','r') as plik:
+with open('liczby.txt', 'r') as plik:
     lista=[int(x) for x in plik]
 #zad2
     def czy_pierwsza(x):
