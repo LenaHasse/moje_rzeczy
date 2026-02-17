@@ -1,4 +1,4 @@
-with open('dane_przyklad.txt','r')as plik:
+with open('dane.txt','r')as plik:
     czyt=plik.read()
     lista_liczb=[]
     temp=''
@@ -9,14 +9,17 @@ with open('dane_przyklad.txt','r')as plik:
             if temp!='':
                 lista_liczb.append(temp)
             temp=''
-    lista_liczb=list(set(lista_liczb))
-    print(lista_liczb)
+    if temp!='':
+        lista_liczb.append(temp)
+
+    lista_unikalne=list(set(lista_liczb))
     #zad1
     zad1=0
-    for i in lista_liczb:
+    for i in lista_unikalne:
         if i[:2]=='50':
             zad1+=1
     print(zad1)
+    print()
 
     #zad2
     cyfry={}
@@ -26,6 +29,7 @@ with open('dane_przyklad.txt','r')as plik:
                 cyfry[j]=1
             else:
                 cyfry[j]+=1
+
     cyfra2=''
     wystapienia2=0
     for cyfra, wystapienie in cyfry.items():
@@ -35,6 +39,7 @@ with open('dane_przyklad.txt','r')as plik:
 
     print(cyfra2)
     print(wystapienia2)
+    print()
 #zad3
 zad3=[]
 for i in lista_liczb:
@@ -42,10 +47,23 @@ for i in lista_liczb:
         zad3.append(i)
 
 print(zad3)
+print(len(zad3))
+print()
 
 #zad4
-nr_telefonow=[x for x in lista_liczb if len(x)==9]
-print(nr_telefonow)
+zad4_odp=[]
+zad4_najmniejsza=float('inf')
+nr_telefonow=[x for x in lista_unikalne if len(x)==9]
 for i in nr_telefonow:
-    slownik={}
+    zad4=[]
     for j in i:
+        if j not in zad4:
+            zad4.append(j)
+    if len(zad4)<zad4_najmniejsza:
+        zad4_najmniejsza=len(zad4)
+        zad4_odp=[i]
+    if len(zad4)==zad4_najmniejsza:
+        zad4_odp.append(i)
+print(set(zad4_odp))
+print(zad4_najmniejsza)
+
