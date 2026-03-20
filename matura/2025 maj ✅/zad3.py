@@ -14,6 +14,7 @@ def nwd(a,b):
     if b==0:
         return a
     return nwd(b,a%b)
+
 ile1=0
 for i in lista:
     temp=nwd(abs(i[0]),abs(i[1]))
@@ -57,4 +58,3 @@ for i in range(len(punkty)):
             b.append(punkty[j])
             break
 print(b)
-#zad3
