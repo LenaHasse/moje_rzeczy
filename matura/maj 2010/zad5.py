@@ -1,7 +1,6 @@
-with open('pesel.txt','r')as plik:
+with open('pesel.txt', 'r')as plik:
     lista=[x.strip()for x in plik]
-    print(lista)
-
+lista=[i[:11] for i in lista if len(i)>=11 and i[:11].isdigit()]
 #a
 zad_a=0
 for i in lista:
@@ -37,19 +36,15 @@ print(rok_c)
 
 #d
 def cyfra_kontrolna(pesel):
-    pesel_bez=pesel[:-1]
-    ostatnia=int(pesel[-1])
-    lista_pesel=[int(x) for x in pesel_bez]
+    if len(pesel)!=11 or not pesel.isdigit():
+        return False
 
     wagi=[1,3,7,9,1,3,7,9,1,3]
-    suma=0
+    suma=sum(int(pesel[i])*wagi[i]for i in range(10))
 
-    for i in range(len(lista_pesel)):
-        suma+=lista_pesel[i]*wagi[i]
-    if suma%10==0:
-        return ostatnia==0
-    else:
-        return 10-suma%10==ostatnia
+    kontrolna=(10-(suma%10))%10
+
+    return kontrolna==int(pesel[10])
 
 zad_d=[]
 for i in lista:
@@ -57,8 +52,8 @@ for i in lista:
         zad_d.append(i)
 zad_d.sort()
 
-print(zad_d)
-
+for i in zad_d:
+    print(i)
 
 
 

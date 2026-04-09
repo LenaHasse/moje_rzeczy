@@ -11,8 +11,12 @@ for i in lista:
             break
     if warunek:
         lista1.append(i)
-print(lista1)
+for i in lista1:
+    for j in i:
+        print(j,end=' ')
+    print()
 
+print('ZADB!!')
 #b
 zadb=[]
 for i in lista:
@@ -28,7 +32,9 @@ for i in lista:
     if warunek:
         zadb.append(i)
 
-print(zadb)
-
+for i in zadb:
+    for j in i:
+        print(j,end=' ')
+    print()
 
 
