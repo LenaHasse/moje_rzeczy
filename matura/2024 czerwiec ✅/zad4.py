@@ -12,7 +12,6 @@ with open('odbiorcy.txt', 'r')as plik:
     for i in range(len(odbiorcy)):
         pakiety.append(i+1)
 
-
     def rundy(lista):
         pakiet=list(lista)
         for i in range(len(odbiorcy)):
