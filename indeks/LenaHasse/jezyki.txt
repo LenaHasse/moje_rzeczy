@@ -1,0 +1,11 @@
+id_jezyka;jezyk
+1;C++
+2;Python
+3;Java
+4;Javascript
+5;Julia
+6;Pascal
+7;C#
+8;R
+9;Swift
+10;PHP

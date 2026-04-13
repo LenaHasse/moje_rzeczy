@@ -1,0 +1,11 @@
+id_zadania;tytul;trudnosc
+1;Palindrom;0,8
+2;Bajtazar w pulapce;1
+3;Pierwsza z pierwszych;0,8
+4;Najmniejszy odwaznik;0,8
+5;Ksiezyc w pelni;1,2
+6;Poszukiwanie wyjscia;0,8
+7;Najmlodszy ratownik;1,2
+8;Wielki troll;1
+9;Pulapka;1,2
+10;Wodociag;1

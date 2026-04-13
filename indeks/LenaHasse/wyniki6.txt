@@ -1,0 +1,30 @@
+6.1
+jezyk	PoliczOfIdentyfikator
+C++	1297
+Python	652
+Swift	149
+
+6.2
+tytul	AC	CE	RE	WA
+Palindrom	185	7	53	76
+Bajtazar w pulapce	155	10	46	63
+Pierwsza z pierwszych	147	4	55	74
+Najmniejszy odwaznik	197	8	42	73
+Ksiezyc w pelni	157	10	54	83
+Poszukiwanie wyjscia	166	8	45	77
+Najmlodszy ratownik	166	7	54	72
+Wielki troll	152	13	50	71
+Pulapka	175	13	50	76
+Wodociag	179	7	50	70
+
+6.3
+imie	nazwisko	szkola	miasto
+Ernest	Lis	VI Liceum Ogolnoksztalcace	Chorzele
+Marcel	Szymczak	VIII Liceum Ogolnoksztalcace	Pleszew
+Marian	Jakubowski	I Liceum Ogolnoksztalcace	Niemodlin
+
+6.4
+id_uczestnika	imie	nazwisko	szkola	miasto	Wyr1
+44	Bruno	Kwiatkowski	IV Liceum Ogolnoksztalcace	Pleszew	120
+77	Antoni	Baran	IX Liceum Ogolnoksztalcace	Wegrow	120
+92	Filip	Piotrowski	I Liceum Ogolnoksztalcace	Skwierzyna	120
