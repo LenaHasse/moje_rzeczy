@@ -1,4 +1,3 @@
-from collections import Counter
 with open('wyrazy.txt','r')as plik:
     wyrazy=[x.strip()for x in plik]
     print(wyrazy)
@@ -24,26 +23,56 @@ print()
 
 #zad2
 zad2=[]
-# def ile_roznic(a,b):
-#     return sum(1 for x,y in zip(a,b)if x!=y)
-# def niepasujace(a,b):
-#     return[(b[i],i)for i in range(len(a))if a[i]!=b[i]]
-# for i in anagramy:
-#     s1,s2=i[0],i[1]
-#     if sorted(s1)!=sorted(s2):
-#         if ile_roznic(s1,s2)==1:
-#             zad2.append([s1,s2,niepasujace(s1,s2)])
-# print(zad2)
-for s1,s2 in anagramy:
-    if sorted(s1)==sorted(s2):
+
+for a, b in anagramy:
+    if sorted(a)==sorted(b):
         continue
-    c1=Counter(s1)
-    c2=Counter(s2)
+    if len(a)!=len(b):
+        continue
 
-    roznice=0
-    litera_do_wstawienia=None
-    litera_do_usuniecia=None
+    target=sorted(a)
+    znalezione=False
+    for i in range(len(b)):
+        for ch in (chr(x)for x in range(ord('A'), ord('Z')+1)):
+            if ch==b[i]:
+                continue
+            nowy=list(b)
+            nowy[i]=ch
 
-    for lit in c1:
-        if c1[lit]!=c2[lit]
-            roznice+=abs()
+            if sorted(nowy)==target:
+                zad2.append([a,b,i+1,ch])
+                znalezione=True
+                break
+        if znalezione:
+            break
+
+print(zad2)
+print()
+#zad3
+target="bura"
+# to ja mam tutaj sama je wygenerowac? bo funkcja moja nic nie generowala, nie ma takich
+
+def generuj_kombinacje(n):
+    if len(n)<=1:
+        return [n]
+    wynik=[]
+    for i in range(len(n)):
+        pierwsza=n[i]
+        reszta=n[:i]+n[i+1:]
+
+        for anagram in generuj_kombinacje(reszta):
+            wynik.append(pierwsza+anagram)
+    return wynik
+
+#zad3 kontynuacja
+for i in set(generuj_kombinacje('bura')):
+    print(i)
+
+print()
+licznik=1
+#nawet nie będę sprawdzać tego z odpowiedziami, ufam intuicji
+for i in wyrazy:
+    print(f'WYRAZ {licznik}')
+    for x in set(generuj_kombinacje(i)):
+        print(x)
+
