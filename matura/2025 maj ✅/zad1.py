@@ -5,7 +5,9 @@ with open('symbole.txt','r')as plik:
     for i in symbole:
         if i==i[::-1]:
             zad1.append(i)
-    print(zad1)
+    print('2.1')
+    for i in zad1:
+        print(i)
     print()
 
     #zad2
@@ -23,8 +25,10 @@ with open('symbole.txt','r')as plik:
                     break
             if czy_kwadrat:
                 zad2.append((i+2,j+2))
+    print('2.2')
     print(len(zad2))
-    print(zad2[len(zad2)//2])
+    for i in zad2:
+        print(i,end=' ')
     print()
 
     #zad3
@@ -59,6 +63,7 @@ with open('symbole.txt','r')as plik:
         if val>max3:
             max3=val
             max3_symbol=symbole[idx]
+    print('2.3')
     print(max3_symbol)
     print(max3)
     print()
@@ -76,6 +81,7 @@ with open('symbole.txt','r')as plik:
         return wynik[::-1]
 
     zad4_3=dziesietny_na_trojkowy(zad4_int)
+    print('2.4')
     print(zad4_int)
     #print(zad4_3)
     wynik4=''

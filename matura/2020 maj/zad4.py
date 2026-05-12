@@ -1,4 +1,4 @@
-with open('pary.txt','r')as plik:
+with open('pary.txt', 'r')as plik:
     lista=[x.strip() for x in plik]
 
     pary=[]
