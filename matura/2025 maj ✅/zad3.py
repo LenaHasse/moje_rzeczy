@@ -1,4 +1,4 @@
-with open('dron_przyklad.txt','r') as plik:
+with open('dron.txt','r') as plik:
     temp=[x.split()for x in plik]
 
     lista=[]
@@ -7,7 +7,6 @@ with open('dron_przyklad.txt','r') as plik:
         for j in i:
             temp1.append(int(j))
         lista.append(temp1)
-    print(lista)
 
 #zad1
 def nwd(a,b):
@@ -20,7 +19,7 @@ for i in lista:
     temp=nwd(abs(i[0]),abs(i[1]))
     if temp>1:
         ile1+=1
-
+print('3.1')
 print(ile1)
 
 #zad2
@@ -32,12 +31,12 @@ for dx,dy in lista:
     x+=dx
     y+=dy
     punkty.append([x,y])
-print(punkty)
+
 ile2=0
 for dx,dy in punkty:
     if dx>0 and dx<5000 and dy>0 and dy<5000:
         ile2+=1
-
+print('3.2')
 print(ile2)
 #b
 b=[]
@@ -57,4 +56,5 @@ for i in range(len(punkty)):
             b.append([x,y])
             b.append(punkty[j])
             break
+print('3.3')
 print(b)

@@ -1,0 +1,55 @@
+5.1
+T4
+905
+5.2
+22
+5.3
+Etykiety wierszy	Suma z załadunekt5	Suma z wyladunekt5
+2016	351	277
+sty	76	32
+lut	8	0
+mar	0	50
+kwi	68	0
+maj	0	0
+cze	42	0
+lip	83	0
+sie	0	191
+wrz	44	4
+paź	0	0
+lis	30	0
+gru	0	0
+2017	174	236
+sty	39	112
+lut	0	1
+mar	35	0
+kwi	1	0
+maj	33	68
+cze	8	0
+lip	42	0
+sie	4	48
+wrz	0	0
+paź	0	6
+lis	12	1
+gru	0	0
+2018	259	271
+sty	10	22
+lut	34	0
+mar	0	34
+kwi	5	0
+maj	0	0
+cze	95	0
+lip	25	0
+sie	22	121
+wrz	0	26
+paź	20	0
+lis	48	64
+gru	0	4
+
+5.4
+a)
+-545844
+
+-24.11.2018, 552335
+
+b) 3400
+
