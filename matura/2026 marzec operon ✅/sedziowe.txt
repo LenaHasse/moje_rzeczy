@@ -1,0 +1,6 @@
+id_sedziego	imie	nazwisko
+1	Marek	Znawca
+2	Jan	Skoczek
+3	Teofil	Malecki
+4	Robert	Gadocha
+5	Jaroslaw	Skorpion
